@@ -91,8 +91,9 @@ function startPat(){
     setTimeout(function(){//防止调用过快  
         if(context)  
         {  
-            context.drawImage(video, 0, 0, 320, 320);       
-            CatchCode();   
+            context.drawImage(video, 0, 0, 320, 320);     
+            startPat();
+//             CatchCode();   
         }  
     },200);  
 }   
